@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafc;
+    color: #22223b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #4267b2;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+nav {
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffb703;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 2rem auto 1rem auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(66,103,178,0.08);
+}
+
+h2 {
+    color: #4267b2;
+    margin-bottom: 1rem;
+}
+
+.lesson-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.lesson-list li {
+    margin-bottom: 0.75rem;
+}
+
+.lesson-list a {
+    color: #22223b;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.lesson-list a:hover {
+    color: #4267b2;
+}
+
+.code-example {
+    margin-bottom: 2rem;
+}
+
+.code-example pre {
+    background: #ececec;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    background: #4267b2;
+    color: #fff;
+    padding: 0.65rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #2c4372;
+}
+
+footer {
+    background: #22223b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    nav a {
+        margin: 0 0.4rem;
+    }
+    header h1 {
+        font-size: 1.4rem;
+    }
+}
